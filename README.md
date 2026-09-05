@@ -1,6 +1,6 @@
 # Abdulmageed Atef MEP Portfolio
 
-A lightweight personal portfolio website for a Mechanical MEP Engineer.
+Version 3 of Abdulmageed Atef's Mechanical MEP Engineer portfolio, including a professional hero profile photo and improved portfolio presentation.
 
 ## Features
 - Responsive design
@@ -26,3 +26,10 @@ For a real online admin dashboard that works across devices, the next version sh
 - `index.html`
 - `styles.css`
 - `app.js`
+
+
+## Version 3 update
+- Added professional profile photo to the hero section
+- Improved hero layout and Core Focus presentation
+- Added LinkedIn shortcut in the hero
+- Retained editable text and project management using Local Storage

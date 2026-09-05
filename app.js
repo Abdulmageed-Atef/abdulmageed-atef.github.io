@@ -67,7 +67,13 @@ function syncLinks(data){
   emailEl.href = data.email && data.email.includes("@") ? `mailto:${data.email}` : "#";
 
   const linkedinEl = document.getElementById("linkedinLink");
-  linkedinEl.href = data.linkedin && data.linkedin.startsWith("http") ? data.linkedin : "#";
+  const heroLinkedinEl = document.getElementById("heroLinkedinLink");
+  const linkedinHref = data.linkedin && data.linkedin.startsWith("http") ? data.linkedin : "#";
+  linkedinEl.href = linkedinHref;
+  if(heroLinkedinEl) {
+    heroLinkedinEl.href = linkedinHref;
+    heroLinkedinEl.title = linkedinHref === "#" ? "Add your LinkedIn URL in Edit Mode" : "Open LinkedIn profile";
+  }
 
   document.getElementById("brandName").innerText = data.name || "Abdulmageed Atef";
   document.getElementById("footerName").innerText = data.name || "Abdulmageed Atef";
