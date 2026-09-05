@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulmageed Atef | Mechanical MEP Engineer | Saudi Arabia</title>
+  <meta name="description" content="Abdulmageed Atef - Mechanical MEP Engineer in Saudi Arabia specializing in HVAC, Plumbing, Fire Fighting, Medical Gas, BMS, Clean Rooms, Healthcare, Laboratory and Commercial Projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <span class="brand-mark">MEP</span>
+        <span id="brandName">Abdulmageed Atef</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="editToggle" class="btn btn-outline" type="button">Edit Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow editable" data-key="heroEyebrow">Mechanical MEP Engineer • Saudi Arabia</span>
+          <h1 class="editable" data-key="name">Abdulmageed Atef</h1>
+          <h2 class="editable" data-key="headline">
+            Mechanical MEP Engineer | Healthcare, Laboratories & Commercial Projects
+          </h2>
+          <p class="hero-text editable" data-key="heroText">
+            4 years of hands-on experience across HVAC, Plumbing, Fire Fighting, Medical Gas, BMS and Clean Room Systems, with a strong focus on site execution, design review, coordination, testing & commissioning, and code compliance.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card">
+              <strong class="editable" data-key="years">4+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <strong>6+</strong>
+              <span>MEP Systems</span>
+            </div>
+            <div class="stat-card">
+              <strong>3</strong>
+              <span>Project Sectors</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="panel-label">Core Focus</div>
+          <div class="system-list">
+            <span>HVAC</span>
+            <span>Plumbing</span>
+            <span>Fire Fighting</span>
+            <span>Medical Gas</span>
+            <span>BMS</span>
+            <span>Clean Rooms</span>
+          </div>
+          <div class="code-box">
+            <span>Codes & Standards</span>
+            <strong>ASHRAE • NFPA • IPC • ASPE • SMACNA • SBC</strong>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container narrow">
+        <span class="section-kicker">About</span>
+        <h2>Engineering experience built around demanding MEP environments.</h2>
+        <p class="editable long-copy" data-key="about">
+          Mechanical MEP Engineer with experience in Healthcare, Laboratory, and Commercial Projects in Saudi Arabia. My work spans site execution, technical coordination, design and drawing review, testing & commissioning, documentation, consultant coordination, and project delivery. I am continuously strengthening my technical knowledge in MEP design, codes, and standards with the goal of progressing toward a Senior MEP Engineer role.
+        </p>
+      </div>
+    </section>
+
+    <section id="expertise" class="section">
+      <div class="container">
+        <span class="section-kicker">Technical Expertise</span>
+        <h2>Systems I work with</h2>
+
+        <div class="cards-grid expertise-grid">
+          <article class="card">
+            <h3>HVAC</h3>
+            <p>Load review, ventilation, ductwork, equipment coordination, exhaust systems, pressure control and T&C.</p>
+          </article>
+          <article class="card">
+            <h3>Plumbing</h3>
+            <p>Water supply, drainage, sanitary systems, equipment connections, coordination and code review.</p>
+          </article>
+          <article class="card">
+            <h3>Fire Fighting</h3>
+            <p>Fire protection coordination, sprinkler systems, hose systems, pumps, layouts and NFPA compliance.</p>
+          </article>
+          <article class="card">
+            <h3>Medical Gas</h3>
+            <p>Medical and laboratory gas distribution, outlets, valves, coordination, testing and handover.</p>
+          </article>
+          <article class="card">
+            <h3>Clean Rooms</h3>
+            <p>Air cleanliness, filtration, pressure relationships, HVAC coordination and technically controlled spaces.</p>
+          </article>
+          <article class="card">
+            <h3>BMS</h3>
+            <p>MEP controls coordination, system interfaces, points review and operational integration.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-heading-row">
+          <div>
+            <span class="section-kicker">Selected Work</span>
+            <h2>Projects</h2>
+          </div>
+          <button id="addProjectBtn" class="btn btn-outline admin-only hidden" type="button">+ Add Project</button>
+        </div>
+
+        <div id="projectsGrid" class="cards-grid projects-grid"></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <span class="section-kicker">Professional Profile</span>
+        <h2>Experience Highlights</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3 class="editable" data-key="role">Mechanical MEP Engineer</h3>
+              <p class="editable" data-key="location">Saudi Arabia</p>
+              <p>Site supervision, execution, design review, technical coordination, material submittals, inspections, testing & commissioning, documentation and handover.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-block">
+          <h3>Software & Engineering Tools</h3>
+          <div class="tags">
+            <span>AutoCAD</span>
+            <span>Revit MEP</span>
+            <span>HAP</span>
+            <span>BIM Coordination</span>
+            <span>Design Review</span>
+            <span>Technical Submittals</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-kicker">Contact</span>
+          <h2>Let’s connect.</h2>
+          <p>Available for professional networking, MEP opportunities, technical collaboration, and engineering discussions.</p>
+        </div>
+
+        <div class="contact-card">
+          <label>Email</label>
+          <a id="emailLink" class="editable" data-key="email" href="mailto:your.email@example.com">your.email@example.com</a>
+
+          <label>LinkedIn</label>
+          <a id="linkedinLink" class="editable" data-key="linkedin" href="#" target="_blank" rel="noopener">Add LinkedIn URL</a>
+
+          <label>Location</label>
+          <span class="editable" data-key="contactLocation">Saudi Arabia</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> <span id="footerName">Abdulmageed Atef</span></span>
+      <span>Mechanical MEP Engineering Portfolio</span>
+    </div>
+  </footer>
+
+  <div id="editBar" class="edit-bar hidden">
+    <span>Edit Mode Active — click highlighted text to edit.</span>
+    <div>
+      <button id="saveBtn" class="btn btn-primary" type="button">Save Changes</button>
+      <button id="resetBtn" class="btn btn-secondary" type="button">Reset</button>
+      <button id="exitEditBtn" class="btn btn-outline" type="button">Exit</button>
+    </div>
+  </div>
+
+  <div id="projectModal" class="modal hidden">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle">Add Project</h3>
+        <button class="icon-btn" type="button" data-close-modal>×</button>
+      </div>
+      <form id="projectForm">
+        <input type="hidden" id="projectId">
+        <label>Project Name</label>
+        <input id="projectName" required placeholder="e.g. Hospital Laboratory Expansion">
+
+        <label>Sector</label>
+        <input id="projectSector" placeholder="Healthcare / Laboratory / Commercial">
+
+        <label>Role</label>
+        <input id="projectRole" placeholder="Mechanical MEP Engineer">
+
+        <label>Systems</label>
+        <input id="projectSystems" placeholder="HVAC, Plumbing, Fire Fighting, Medical Gas">
+
+        <label>Description</label>
+        <textarea id="projectDescription" rows="5" placeholder="Brief scope, responsibilities, challenges and achievements."></textarea>
+
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" data-close-modal>Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
